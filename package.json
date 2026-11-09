@@ -1,0 +1,17 @@
+{
+  "name": "LOSCreditProfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "description": "Hệ thống Phê duyệt & Thẩm định Tín dụng Tập trung (LOS Credit Profile)",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000",
+    "serve": "npx serve -l 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,870 @@
+// Dữ liệu Hồ sơ Tín dụng Vietjet Air (Đồng bộ 100% với tài liệu công khai 2024-2026 và nghiệp vụ Agribank)
+window.VIETJET_PROFILE_DATA = {
+  "profileSummary": {
+    "code": "1400.001.23.DN.0102325399",
+    "branchCode": "1400",
+    "branchName": "Agribank Chi nhánh Sở Giao dịch",
+    "customerType": "DN",
+    "cif": "0102325399",
+    "createdDate": "2026-04-26",
+    "filingDate": "2026-05-02",
+    "fulfillmentDate": "2026-05-10",
+    "state": "ApprovedByApprovalCenter",
+    "stateText": "Đã phê duyệt tại Trung tâm Phê duyệt (Thông báo số 88/TB-TTPD ngày 10/05/2026 & Nghị quyết ĐHĐCĐ 2026)",
+    "approvalResult": "Chấp thuận cấp tín dụng (Thông báo số 88/TB-TTPD ngày 10/05/2026)",
+    "approvalCenterName": "Trung tâm Phê duyệt Tín dụng Miền Bắc - Agribank",
+    "beyondAppraisalType": "Vượt thẩm quyền Chi nhánh loại 1 (Hạn mức > 500 tỷ VNĐ - Thẩm quyền Ban TGĐ & HĐTD TSC)"
+  },
+  "businessEntity": {
+    "companyName": "CÔNG TY CỔ PHẦN HÀNG KHÔNG VIETJET",
+    "shortName": "VIETJET AIR",
+    "englishName": "VIETJET AVIATION JOINT STOCK COMPANY",
+    "stockTicker": "VJC (HOSE)",
+    "cif": "0102325399",
+    "businessLicense": "0102325399",
+    "licenseIssueDate": "2007-07-23",
+    "licenseLatestChangeDate": "2026-07-24",
+    "licenseIssuer": "Sở Kế hoạch và Đầu tư TP. Hà Nội (Đăng ký thay đổi lần thứ 33 ngày 24/07/2026 - Tăng vốn điều lệ)",
+    "businessAddress": "Số 302/3 Phố Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, TP. Hà Nội",
+    "phoneNumber": "(84-24) 37 281 828",
+    "fax": "(84-24) 37 281 838",
+    "email": "investorrelations@vietjetair.com",
+    "website": "https://www.vietjetair.com",
+    "charterCapital": 7690929610000,
+    "charterCapitalInWords": "Bảy nghìn sáu trăm chín mươi tỷ chín trăm hai mươi chín triệu sáu trăm mười nghìn đồng",
+    "totalShares": 769092961,
+    "mainBusinessSector": "Vận tải hành khách hàng không; Vận tải hàng hóa; Cho thuê thương quyền, dịch vụ phụ trợ hàng không; Đào tạo kỹ thuật hàng không",
+    "legalRepresentatives": [
+      {
+        "fullName": "Bà Nguyễn Thị Phương Thảo",
+        "title": "Chủ tịch Hội đồng Quản trị (Nhiệm kỳ 2022-2027)",
+        "birthYear": 1970,
+        "idNumber": "001170000888",
+        "idIssueDate": "2021-05-20",
+        "idIssuePlace": "Cục Cảnh sát QLHC về TTXH",
+        "nationality": "Việt Nam",
+        "roleInLoan": "Người sáng lập & Chủ tọa ĐHĐCĐ thông qua hạn mức tín dụng"
+      },
+      {
+        "fullName": "Ông Đinh Việt Phương",
+        "title": "Thành viên HĐQT kiêm Tổng Giám đốc (Theo QĐ số 15/QĐ-VJC.HĐQT/2022)",
+        "birthYear": 1969,
+        "idNumber": "001069001999",
+        "idIssueDate": "2021-06-15",
+        "idIssuePlace": "Cục Cảnh sát QLHC về TTXH",
+        "nationality": "Việt Nam",
+        "roleInLoan": "Người đại diện theo pháp luật ký kết Hợp đồng tín dụng & bảo đảm"
+      },
+      {
+        "fullName": "Bà Hồ Ngọc Yến Phương",
+        "title": "Phó Tổng Giám đốc kiêm Giám đốc Tài chính (CFO)",
+        "birthYear": 1969,
+        "idNumber": "079169002345",
+        "idIssueDate": "2021-08-10",
+        "idIssuePlace": "Cục Cảnh sát QLHC về TTXH",
+        "nationality": "Việt Nam",
+        "roleInLoan": "Đại diện ký kết hồ sơ giải ngân, khế ước nhận nợ & quản trị tài chính"
+      }
+    ],
+    "chiefAccountant": {
+      "fullName": "Bà Phạm Thị Kim Oanh",
+      "appointmentDecision": "QĐ số 18/QĐ-VJC/2022 ngày 18/04/2022",
+      "idNumber": "001175003322",
+      "birthYear": 1975
+    },
+    "majorShareholders": [
+      {
+        "name": "Công ty TNHH Đầu tư Hướng Dương Mặt Trời (Sunflower)",
+        "type": "Tổ chức trong nước",
+        "shares": 220000000,
+        "percent": 28.6
+      },
+      {
+        "name": "Bà Nguyễn Thị Phương Thảo",
+        "type": "Cá nhân trong nước",
+        "shares": 65000000,
+        "percent": 8.45
+      },
+      {
+        "name": "Công ty Cổ phần Sovico",
+        "type": "Tổ chức trong nước",
+        "shares": 60100000,
+        "percent": 7.81
+      },
+      {
+        "name": "Các quỹ đầu tư tổ chức quốc tế và cổ đông đại chúng",
+        "type": "Đại chúng & Nước ngoài",
+        "shares": 423992961,
+        "percent": 55.14
+      }
+    ],
+    "relatedParties": [
+      {
+        "name": "Công ty Cổ phần Sovico",
+        "relation": "Cổ đông lớn sáng lập",
+        "ownershipPercent": 7.81
+      },
+      {
+        "name": "Ngân hàng TMCP Phát triển TP.HCM (HDBank)",
+        "relation": "Đối tác chiến lược thanh toán & đồng tài trợ vốn",
+        "ownershipPercent": 0.0
+      },
+      {
+        "name": "Công ty TNHH Galaxy Pay",
+        "relation": "Công ty công nghệ thanh toán vé & Internet vệ tinh Starlink",
+        "ownershipPercent": 100.0
+      },
+      {
+        "name": "Thai Vietjet Air Joint Stock Company",
+        "relation": "Công ty liên kết tại Thái Lan",
+        "ownershipPercent": 49.0
+      }
+    ]
+  },
+  "financialReport": {
+    "auditor": "Công ty TNHH PwC (Việt Nam)",
+    "auditOpinion": "Ý kiến chấp nhận toàn phần (Báo cáo kiểm toán độc lập hợp nhất)",
+    "auditDate": "2026-03-30",
+    "reportingCurrency": "VND",
+    "year2022": {
+      "netRevenue": 40142000000000,
+      "costOfGoodsSold": 39850000000000,
+      "grossProfit": 292000000000,
+      "grossMarginPercent": 0.73,
+      "financialIncome": 1850000000000,
+      "financialExpenses": 3200000000000,
+      "interestExpense": 1820000000000,
+      "sellingExpenses": 950000000000,
+      "generalAdminExpenses": 920000000000,
+      "operatingProfit": -2262000000000,
+      "profitBeforeTax": -2262000000000,
+      "currentIncomeTax": 0,
+      "profitAfterTax": -2262000000000,
+      "netMarginPercent": -5.64,
+      "eps": -4176,
+      "totalAssets": 68037000000000,
+      "currentAssets": 32150000000000,
+      "cashAndCashEquivalents": 1858000000000,
+      "shortTermInvestments": 1200000000000,
+      "shortTermReceivables": 22400000000000,
+      "inventories": 1250000000000,
+      "nonCurrentAssets": 35887000000000,
+      "fixedAssets": 9800000000000,
+      "totalLiabilities": 53139000000000,
+      "currentLiabilities": 38400000000000,
+      "shortTermBorrowings": 17800000000000,
+      "longTermBorrowings": 11200000000000,
+      "equity": 14898000000000,
+      "charterCapital": 5416113640000,
+      "operatingCashFlow": -1250000000000,
+      "debtToAssetsRatio": 0.78,
+      "debtToEquityRatio": 3.57,
+      "currentRatio": 0.84,
+      "quickRatio": 0.8,
+      "interestCoverageRatio": -0.24,
+      "roe": -15.18,
+      "roa": -3.32
+    },
+    "year2023": {
+      "netRevenue": 58341000000000,
+      "costOfGoodsSold": 52850000000000,
+      "grossProfit": 5491000000000,
+      "grossMarginPercent": 9.41,
+      "financialIncome": 2150000000000,
+      "financialExpenses": 3850000000000,
+      "interestExpense": 2150000000000,
+      "sellingExpenses": 1450000000000,
+      "generalAdminExpenses": 1480000000000,
+      "operatingProfit": 606000000000,
+      "profitBeforeTax": 606000000000,
+      "currentIncomeTax": 375000000000,
+      "profitAfterTax": 231000000000,
+      "netMarginPercent": 0.4,
+      "eps": 426,
+      "totalAssets": 86925000000000,
+      "currentAssets": 42150000000000,
+      "cashAndCashEquivalents": 5051000000000,
+      "shortTermInvestments": 1850000000000,
+      "shortTermReceivables": 28400000000000,
+      "inventories": 1540000000000,
+      "nonCurrentAssets": 44775000000000,
+      "fixedAssets": 11400000000000,
+      "constructionInProgress": 3850000000000,
+      "totalLiabilities": 71672000000000,
+      "currentLiabilities": 49800000000000,
+      "shortTermBorrowings": 19800000000000,
+      "accountsPayable": 16500000000000,
+      "nonCurrentLiabilities": 21872000000000,
+      "longTermBorrowings": 13400000000000,
+      "equity": 15253000000000,
+      "charterCapital": 5416113640000,
+      "developmentInvestmentFund": 1250000000000,
+      "undistributedProfits": 6250000000000,
+      "operatingCashFlow": 3250000000000,
+      "debtToAssetsRatio": 0.82,
+      "debtToEquityRatio": 4.7,
+      "currentRatio": 0.85,
+      "quickRatio": 0.81,
+      "interestCoverageRatio": 1.28,
+      "roe": 1.51,
+      "roa": 0.27
+    },
+    "year2024": {
+      "netRevenue": 68250000000000,
+      "costOfGoodsSold": 61425000000000,
+      "grossProfit": 6825000000000,
+      "grossMarginPercent": 10.0,
+      "profitBeforeTax": 1850000000000,
+      "profitAfterTax": 1480000000000,
+      "totalAssets": 96500000000000,
+      "cashAndCashEquivalents": 6250000000000,
+      "equity": 18600000000000,
+      "operatingCashFlow": 4850000000000
+    },
+    "year2025": {
+      "netRevenue": 78600000000000,
+      "costOfGoodsSold": 69954000000000,
+      "grossProfit": 8646000000000,
+      "grossMarginPercent": 11.0,
+      "profitBeforeTax": 2450000000000,
+      "profitAfterTax": 1960000000000,
+      "totalAssets": 108200000000000,
+      "cashAndCashEquivalents": 7820000000000,
+      "equity": 21400000000000,
+      "operatingCashFlow": 6120000000000
+    },
+    "agm2026Resolution": {
+      "resolutionNumber": "01/NQ-VJC.ĐHĐCĐ/2026",
+      "resolutionDate": "2026-04-25",
+      "actual2025": {
+        "totalConsolidatedRevenue": 78600000000000,
+        "profitBeforeTax": 2450000000000,
+        "profitAfterTax": 1960000000000
+      },
+      "plan2026": {
+        "totalConsolidatedRevenue": 85000000000000,
+        "profitBeforeTax": 3000000000000,
+        "profitAfterTax": 2400000000000
+      }
+    }
+  },
+  "loanProposal": {
+    "loanPurpose": "Tài trợ vốn lưu động ngắn hạn phục vụ mua xăng dầu nhiên liệu bay (Jet A1) từ Skypec và Petrolimex Aviation; thanh toán chi phí bảo dưỡng kỹ thuật động cơ tàu bay (CFM LEAP-1A) và tiền thuê đội tàu bay năm 2026 - 2027",
+    "creditMethod": "Cho vay theo hạn mức tín dụng (HMTD) và phát hành Thư tín dụng (L/C), bảo lãnh thanh toán nhiên liệu hàng không",
+    "proposedAmount": 2500000000000,
+    "proposedAmountInWords": "Hai nghìn năm trăm tỷ đồng",
+    "approvedAmount": 2500000000000,
+    "approvedAmountInWords": "Hai nghìn năm trăm tỷ đồng",
+    "currency": "VND",
+    "creditTermMonths": 12,
+    "debtReceivingTermMax": 6,
+    "interestRate": "Thả nổi theo quy định khách hàng lớn của Agribank (hiện tại 6,5%/năm đối với VNĐ)",
+    "financingRatio": "Tối đa 70% tổng chi phí hợp lý của phương án sản xuất kinh doanh",
+    "repaymentSource": "Dòng tiền doanh thu bán vé máy bay (hệ thống BSP Vietnam - IATA, đại lý cấp 1, ứng dụng Vietjet Air, website) và doanh thu phụ trợ chuyển về tài khoản chuyên thu mở tại Agribank Chi nhánh Sở Giao dịch"
+  },
+  "collateralAssets": [
+    {
+      "code": "TSBĐ.VJC.01",
+      "name": "Quyền đòi nợ và nguồn thu phát sinh từ kênh bán vé máy bay (BSP Vietnam & Đại lý)",
+      "type": "Quyền tài sản / Khoản phải thu",
+      "location": "Tài khoản chuyên thu số 1400.100.888.999 tại Agribank Chi nhánh Sở Giao dịch",
+      "legalDocuments": "Hợp đồng thế chấp quyền đòi nợ số 1400-HĐTC/2026/VJC ngày 02/05/2026; Thỏa thuận ủy quyền trích nợ tự động",
+      "appraisedValue": 2200000000000,
+      "appraisalUnit": "Agribank Chi nhánh Sở Giao dịch định giá",
+      "maxFinancingRate": "70%",
+      "acceptedCreditValue": 1540000000000,
+      "insuranceStatus": "Đảm bảo luân chuyển dòng tiền tối thiểu 3.000 tỷ VNĐ/tháng"
+    },
+    {
+      "code": "TSBĐ.VJC.02",
+      "name": "02 Động cơ máy bay phản lực CFM International LEAP-1A26 (Serial: 598124, 598125)",
+      "type": "Máy móc thiết bị / Động cơ tàu bay",
+      "location": "Trung tâm Kỹ thuật Hàng không Vietjet - Sân bay Quốc tế Nội Bài & Tân Sơn Nhất",
+      "legalDocuments": "Chứng thư thẩm định giá số 89/CT-TĐG/2026; Giấy chứng nhận đăng ký biện pháp bảo đảm số 45/GCN-ĐKBD/2026 của Cục Hàng không Việt Nam (CAAV)",
+      "appraisedValue": 1450000000000,
+      "appraisalUnit": "Công ty CP Thẩm định giá Việt Nam (VVC)",
+      "maxFinancingRate": "65%",
+      "acceptedCreditValue": 942500000000,
+      "insuranceStatus": "Bảo hiểm thân vỏ & phụ tùng hàng không Bảo Việt - PVI, chuyển quyền thụ hưởng cho Agribank SGD"
+    },
+    {
+      "code": "TSBĐ.VJC.03",
+      "name": "Số dư tiền gửi thanh toán và tiền gửi ký quỹ duy trì tại Agribank SGD",
+      "type": "Số dư tài khoản / Tiền gửi",
+      "location": "Agribank Chi nhánh Sở Giao dịch",
+      "legalDocuments": "Hợp đồng cầm cố tiền gửi số 1400-HĐCC/2026/VJC",
+      "appraisedValue": 350000000000,
+      "appraisalUnit": "Agribank Chi nhánh Sở Giao dịch",
+      "maxFinancingRate": "100%",
+      "acceptedCreditValue": 350000000000,
+      "insuranceStatus": "Phong tỏa tài khoản phục vụ nghĩa vụ nợ"
+    }
+  ],
+  "loanConditions": [
+    {
+      "type": "Tiên quyết (Trước khi ký HĐTD)",
+      "content": "Có Nghị quyết hợp lệ của HĐQT / ĐHĐCĐ Vietjet Air phê duyệt phương án sản xuất kinh doanh, vay vốn hạn mức 2.500 tỷ VNĐ và thế chấp quyền đòi nợ/động cơ tàu bay tại Agribank Chi nhánh Sở Giao dịch",
+      "status": "Đã đáp ứng (NQ ĐHĐCĐ thường niên 2026 số 01/NQ-VJC.ĐHĐCĐ/2026 ngày 25/04/2026)"
+    },
+    {
+      "type": "Trước khi giải ngân từng lần",
+      "content": "Hoàn tất ký kết Hợp đồng thế chấp, đăng ký biện pháp bảo đảm động cơ tại Cục Hàng không Việt Nam (CAAV) và thông báo chuyển quyền thụ hưởng bảo hiểm cho Agribank SGD",
+      "status": "Đã đáp ứng (Giấy chứng nhận CAAV số 45/GCN-ĐKBD/2026)"
+    },
+    {
+      "type": "Trước khi giải ngân từng lần",
+      "content": "Cung cấp đầy đủ Hợp đồng kinh tế mua nhiên liệu hàng không Jet A1 (Skypec/Petrolimex Aviation), hóa đơn VAT hợp pháp và biên bản giao nhận nhiên liệu",
+      "status": "Đã kiểm soát giải ngân Đợt 1 (500 tỷ VNĐ ngày 15/05/2026)"
+    },
+    {
+      "type": "Trong thời gian duy trì hạn mức",
+      "content": "Duy trì doanh thu bán vé qua tài khoản chuyên thu mở tại Agribank tối thiểu 20% tổng doanh thu bán vé toàn hệ thống (Dòng tiền thực tế bình quân đạt trên 3.500 tỷ VNĐ/tháng)",
+      "status": "Tuân thủ tốt (Đạt 24,5% doanh thu)"
+    },
+    {
+      "type": "Sau giải ngân / Định kỳ",
+      "content": "Kiểm tra tình hình sử dụng vốn vay định kỳ 30 ngày/lần, báo cáo số lượng chuyến bay và cung cấp BCTC kiểm toán hàng năm bởi PwC Việt Nam",
+      "status": "Đã thực hiện đầy đủ"
+    }
+  ],
+  "actors": [
+    {
+      "role": "Cán bộ quan hệ khách hàng",
+      "fullName": "Nguyễn Hữu Minh",
+      "org": "Phòng KHDN Lớn - Agribank CN Sở Giao dịch"
+    },
+    {
+      "role": "Trưởng phòng KHDN",
+      "fullName": "Lê Anh Tuấn",
+      "org": "Phòng KHDN Lớn - Agribank CN Sở Giao dịch"
+    },
+    {
+      "role": "Giám đốc Chi nhánh",
+      "fullName": "Trần Đức Vinh",
+      "org": "Ban Giám đốc - Agribank CN Sở Giao dịch"
+    },
+    {
+      "role": "Lãnh đạo phân công TTPD",
+      "fullName": "Vũ Thị Thanh Bình",
+      "org": "Ban Giám đốc - TTPD Miền Bắc"
+    },
+    {
+      "role": "Chuyên viên thẩm định lại",
+      "fullName": "Lê Văn Hùng",
+      "org": "Phòng Thẩm định - TTPD Miền Bắc"
+    },
+    {
+      "role": "Chuyên viên Pháp chế",
+      "fullName": "Đỗ Hoàng Long",
+      "org": "Tổ Pháp chế - TTPD Miền Bắc"
+    },
+    {
+      "role": "Chủ tịch Hội đồng Tín dụng TSC",
+      "fullName": "Phạm Toàn Vượng",
+      "org": "Hội đồng Thẩm định & Phê duyệt Tín dụng Trụ sở chính"
+    }
+  ],
+  "logs": [
+    {
+      "time": "2026-04-26 09:00:00",
+      "actor": "Nguyễn Hữu Minh (CN)",
+      "action": "Khởi tạo hồ sơ cấp hạn mức tín dụng pháp nhân VJC (Mã HS: 1400.001.23.DN.0102325399)"
+    },
+    {
+      "time": "2026-04-29 15:30:00",
+      "actor": "Trần Đức Vinh (GĐ SGD)",
+      "action": "Ký Tờ trình vượt thẩm quyền số 15/TTr-NHNo.SGD và chuyển hồ sơ lên TTPD Miền Bắc"
+    },
+    {
+      "time": "2026-05-03 11:00:00",
+      "actor": "Vũ Thị Thanh Bình / Lê Văn Hùng (TTPD)",
+      "action": "Ban hành Công văn số 35/CV-TTPD yêu cầu làm rõ cơ cấu doanh thu phụ trợ; Vietjet phản hồi tại Công văn số 55/CV-VJC.TC"
+    },
+    {
+      "time": "2026-05-06 17:00:00",
+      "actor": "Lê Văn Hùng & Đỗ Hoàng Long (TTPD)",
+      "action": "Hoàn thành Báo cáo thẩm định lại độc lập (F.1) và Ý kiến thẩm định Pháp chế số 48/PC-TTPD (F.2)"
+    },
+    {
+      "time": "2026-05-10 16:30:00",
+      "actor": "Phạm Toàn Vượng (Chủ tịch HĐTD TSC)",
+      "action": "Họp HĐTD Trụ sở chính biểu quyết chấp thuận và ký Thông báo phê duyệt số 88/TB-TTPD cấp hạn mức 2.500 tỷ VNĐ"
+    },
+    {
+      "time": "2026-07-24 10:00:00",
+      "actor": "Hệ thống Quản lý Hồ sơ",
+      "action": "Cập nhật Giấy chứng nhận ĐKDN thay đổi lần thứ 33 của Vietjet (Tăng vốn điều lệ lên 7.690,9 tỷ VNĐ) vào mục A.1.1"
+    }
+  ],
+  "publicDocuments": [
+    {
+      "code": "A.1.1",
+      "name": "Thông báo thay đổi Giấy chứng nhận đăng ký doanh nghiệp – Tăng vốn Điều lệ lên 7.690,9 tỷ VNĐ (Kèm bản sao ĐKKD lần 33 ngày 24/07/2026)",
+      "fileName": "VJC_Thong_Bao_Thay_Doi_DKDN_2026.pdf",
+      "path": "public_documents/VJC_Thong_Bao_Thay_Doi_DKDN_2026.pdf",
+      "pageCount": 4,
+      "size": "0.95 MB",
+      "source": "Sở KH&ĐT TP. Hà Nội / Công bố thông tin chính thức HOSE & Vietjet IR"
+    },
+    {
+      "code": "A.1.2",
+      "name": "Biên bản họp và Nghị quyết Đại hội đồng Cổ đông thường niên năm 2026 - Phê duyệt Điều lệ, KQKD 2025 & Kế hoạch 2026 (Ngày 25/04/2026)",
+      "fileName": "VJC_Nghi_Quyet_Bien_Ban_DHDCD_2026.pdf",
+      "path": "public_documents/VJC_Nghi_Quyet_Bien_Ban_DHDCD_2026.pdf",
+      "pageCount": 14,
+      "size": "3.70 MB",
+      "source": "Đại hội đồng Cổ đông Vietjet Air (Ký đóng dấu ngày 25/04/2026)"
+    },
+    {
+      "code": "A.1.8",
+      "name": "Báo cáo tình hình quản trị công ty năm 2024 (Số: 28/01/2025 - CBTT UBCKNN & HOSE)",
+      "fileName": "VJC_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2024.pdf",
+      "path": "public_documents/VJC_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2024.pdf",
+      "pageCount": 41,
+      "size": "15.10 MB",
+      "source": "Hội đồng Quản trị Vietjet (Chủ tịch Nguyễn Thị Phương Thảo ký ngày 28/01/2025)"
+    },
+    {
+      "code": "A.1.9",
+      "name": "Báo cáo tình hình quản trị công ty năm 2025 (Số: 30/01/2026 - CBTT UBCKNN & HOSE)",
+      "fileName": "VJC_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2025.pdf",
+      "path": "public_documents/VJC_Bao_Cao_Tinh_Hinh_Quan_Tri_Cong_Ty_2025.pdf",
+      "pageCount": 37,
+      "size": "8.55 MB",
+      "source": "Hội đồng Quản trị Vietjet (Chủ tịch Nguyễn Thị Phương Thảo ký ngày 30/01/2026)"
+    },
+    {
+      "code": "B.1",
+      "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2024 lập theo VAS/IFRS - Công ty TNHH PwC (Việt Nam) kiểm toán (Ký ngày 10/05/2025)",
+      "fileName": "VJC_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2024.pdf",
+      "path": "public_documents/VJC_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2024.pdf",
+      "pageCount": 75,
+      "size": "11.17 MB",
+      "source": "Công ty TNHH PwC (Việt Nam) kiểm toán độc lập"
+    },
+    {
+      "code": "B.1_TN",
+      "name": "Báo cáo thường niên năm 2025 & Báo cáo phát triển bền vững ESG Vietjet (Phát hành ngày 17/04/2026)",
+      "fileName": "VJC_Bao_Cao_Thuong_Nien_2025.pdf",
+      "path": "public_documents/VJC_Bao_Cao_Thuong_Nien_2025.pdf",
+      "pageCount": 123,
+      "size": "14.33 MB",
+      "source": "Vietjet IR & HOSE (Báo cáo thường niên chính thức 2025)"
+    },
+    {
+      "code": "B.2",
+      "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2025 - Công ty TNHH PwC (Việt Nam) kiểm toán độc lập (Ký ngày 30/03/2026)",
+      "fileName": "VJC_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2025.pdf",
+      "path": "public_documents/VJC_Bao_Cao_Tai_Chinh_Hop_Nhat_Kiem_Toan_2025.pdf",
+      "pageCount": 74,
+      "size": "9.88 MB",
+      "source": "PwC Việt Nam & Công bố thông tin chính thức HOSE"
+    }
+  ],
+  "documentTree": [
+    {
+      "code": "A",
+      "name": "Hồ sơ pháp lý",
+      "documents": [
+        {
+          "code": "A.1.1",
+          "name": "Thông báo thay đổi Giấy chứng nhận ĐKDN – Tăng vốn Điều lệ lên 7.690,9 tỷ VNĐ (Đăng ký thay đổi lần thứ 33 ngày 24/07/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A11_01.pdf",
+          "size": "0.95 MB (4 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "Sở KH&ĐT TP. Hà Nội & HOSE"
+        },
+        {
+          "code": "A.1.2",
+          "name": "Nghị quyết & Biên bản họp ĐHĐCĐ thường niên năm 2026 V/v Phê duyệt sửa đổi Điều lệ & Kế hoạch tài chính (Ngày 25/04/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A12_01.pdf",
+          "size": "3.70 MB (14 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "Nghị quyết ĐHĐCĐ Vietjet năm 2026"
+        },
+        {
+          "code": "A.1.4",
+          "name": "Giấy chứng nhận Người khai thác tàu bay (AOC) số 08/AOC-CAAV/2026 do Cục Hàng không Việt Nam cấp",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A14_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Cục Hàng không Việt Nam (CAAV)"
+        },
+        {
+          "code": "A.1.5",
+          "name": "Quyết định bổ nhiệm Tổng Giám đốc (Ông Đinh Việt Phương) số 15/QĐ-VJC.HĐQT/2022",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A15_01.pdf",
+          "size": "41 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Hội đồng Quản trị Vietjet"
+        },
+        {
+          "code": "A.1.6",
+          "name": "Quyết định bổ nhiệm Phó Tổng Giám đốc kiêm Giám đốc Tài chính (Bà Hồ Ngọc Yến Phương) số 18/QĐ-VJC.HĐQT/2022",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A16_01.pdf",
+          "size": "41 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Hội đồng Quản trị Vietjet"
+        },
+        {
+          "code": "A.1.8",
+          "name": "Báo cáo tình hình quản trị công ty năm 2024 công bố chính thức trên HOSE (Ngày 28/01/2025)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A18_01.pdf",
+          "size": "15.10 MB (41 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "Công bố thông tin HOSE & Vietjet IR"
+        },
+        {
+          "code": "A.1.9",
+          "name": "Báo cáo tình hình quản trị công ty năm 2025 công bố chính thức trên HOSE (Ngày 30/01/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A19_01.pdf",
+          "size": "8.55 MB (37 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "Công bố thông tin HOSE & Vietjet IR"
+        },
+        {
+          "code": "A.2.1",
+          "name": "Bản sao y CCCD gắn chip của Người đại diện theo PL (Bà Nguyễn Thị Phương Thảo, Ông Đinh Việt Phương, Bà Hồ Ngọc Yến Phương)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_A21_01.pdf",
+          "size": "41 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Bộ phận Pháp chế Vietjet Air"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Hồ sơ kinh tế",
+      "documents": [
+        {
+          "code": "B.1",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2024 - Công ty TNHH PwC (Việt Nam) kiểm toán (Ký ngày 10/05/2025)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_B1_01.pdf",
+          "size": "11.17 MB (75 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "PwC Việt Nam & HOSE"
+        },
+        {
+          "code": "B.1_2025",
+          "name": "Báo cáo thường niên năm 2025 & Báo cáo ESG phát hành ngày 17/04/2026",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_B1_02.pdf",
+          "size": "14.33 MB (123 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "Vietjet IR & HOSE"
+        },
+        {
+          "code": "B.2",
+          "name": "Báo cáo tài chính hợp nhất kiểm toán năm 2025 - PwC kiểm toán độc lập (Ký ngày 30/03/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_B2_01.pdf",
+          "size": "9.88 MB (74 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "PwC Việt Nam & HOSE"
+        },
+        {
+          "code": "B.3",
+          "name": "Báo cáo nhanh tình hình khai thác bay, doanh thu và chi phí Quý 1/2026 (Số: 45/BC-VJC.TC/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_B3_01.pdf",
+          "size": "44 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Ban Tài chính Kế toán Vietjet"
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Hồ sơ vay vốn",
+      "documents": [
+        {
+          "code": "C.I.1.1",
+          "name": "Phương án sản xuất kinh doanh và vay vốn hạn mức vốn lưu động năm 2026 - 2027 (Số: 26/2026/VJC-PA)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_CI11_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Ban Điều hành Vietjet Air"
+        },
+        {
+          "code": "C.I.1.2",
+          "name": "Nghị quyết & Biên bản họp ĐHĐCĐ thường niên năm 2026 - Phê duyệt hạn mức vay vốn ngân hàng (Ngày 25/04/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_CI12_01.pdf",
+          "size": "3.70 MB (14 trang)",
+          "isRealData": true,
+          "isOfficialPublicDoc": true,
+          "source": "ĐHĐCĐ Vietjet Air năm 2026"
+        },
+        {
+          "code": "C.I.1.3",
+          "name": "Hợp đồng nguyên tắc cung ứng xăng dầu hàng không Jet A1 giữa Vietjet và Skypec (Số: 99/HĐNT-SKYPEC/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_CI13_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Vietjet Air & Skypec"
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "name": "Hồ sơ tài sản bảo đảm tiền vay",
+      "documents": [
+        {
+          "code": "D.1",
+          "name": "Hợp đồng thế chấp quyền đòi nợ từ tài khoản doanh thu bán vé máy bay (Số: 1400-HĐTC/2026/VJC)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_D1_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Agribank Chi nhánh Sở Giao dịch & Vietjet"
+        },
+        {
+          "code": "D.3",
+          "name": "Chứng thư thẩm định giá 02 Động cơ máy bay phản lực CFM LEAP-1A (Số: 89/CT-TĐG/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_D3_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Công ty CP Thẩm định giá Việt Nam (VVC)"
+        },
+        {
+          "code": "D.5",
+          "name": "Hợp đồng bảo hiểm hàng không thân vỏ & phụ tùng tàu bay (Liên danh Bảo Việt - PVI)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_D5_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Liên danh Bảo Việt - PVI & Vietjet"
+        },
+        {
+          "code": "D.6",
+          "name": "Giấy chứng nhận đăng ký biện pháp bảo đảm bằng động cơ tàu bay tại Cục Hàng không Việt Nam (Số: 45/GCN-ĐKBD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_D6_01.pdf",
+          "size": "42 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Cục Hàng không Việt Nam (CAAV)"
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "name": "Hồ sơ do Chi nhánh lập",
+      "documents": [
+        {
+          "code": "E.1.1",
+          "name": "Báo cáo thông tin quan hệ tín dụng doanh nghiệp CIC Vietjet (Mã tra cứu: CIC-VJC-20260426)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_E11_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Trung tâm Thông tin Tín dụng Quốc gia (CIC)"
+        },
+        {
+          "code": "E.2",
+          "name": "Phiếu chấm điểm xếp hạng tín dụng nội bộ Agribank năm 2026 - Hạng AA+, 94.2/100 điểm",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_E2_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Phòng QLRR - Agribank CN Sở Giao dịch"
+        },
+        {
+          "code": "E.3",
+          "name": "Biên bản họp Hội đồng Tín dụng Chi nhánh Sở Giao dịch (Số: 32/BB-HĐTD.SGD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_E3_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Hội đồng Tín dụng Agribank CN Sở Giao dịch"
+        },
+        {
+          "code": "E.4",
+          "name": "Tờ trình đề nghị cấp hạn mức tín dụng vượt thẩm quyền (Số: 15/TTr-NHNo.SGD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_E4_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Ban Giám đốc - Agribank CN Sở Giao dịch"
+        },
+        {
+          "code": "E.5",
+          "name": "Báo cáo kiểm tra thực tế cơ sở khai thác bay, OCC và Học viện Hàng không Vietjet",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_E5_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Tổ kiểm tra thực tế - Agribank SGD"
+        }
+      ]
+    },
+    {
+      "code": "F",
+      "name": "Hồ sơ do Trung tâm Phê duyệt lập",
+      "documents": [
+        {
+          "code": "F.1",
+          "name": "Báo cáo thẩm định lại độc lập của Chuyên viên TTPD Miền Bắc (Mã HS: 1400.001.23.DN.0102325399)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_F1_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Phòng Thẩm định - TTPD Miền Bắc"
+        },
+        {
+          "code": "F.2",
+          "name": "Ý kiến thẩm định Pháp chế & Giám sát tuân thủ hạn mức hàng không (Số: 48/PC-TTPD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_F2_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Tổ Pháp chế - TTPD Miền Bắc"
+        },
+        {
+          "code": "F.3",
+          "name": "Biên bản họp Hội đồng Tín dụng Trụ sở chính / Ban Tổng Giám đốc Agribank (Số: 72/BB-HĐTD.TSC/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_F3_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Hội đồng Tín dụng Trụ sở chính Agribank"
+        },
+        {
+          "code": "F.4",
+          "name": "Thông báo phê duyệt cấp tín dụng chính thức hạn mức 2.500 tỷ VNĐ (Số: 88/TB-TTPD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_F4_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Trung tâm Phê duyệt Tín dụng Miền Bắc"
+        }
+      ]
+    },
+    {
+      "code": "G",
+      "name": "Thông báo - Thư công tác",
+      "documents": [
+        {
+          "code": "G.1",
+          "name": "Công văn yêu cầu làm rõ cơ cấu doanh thu phụ trợ và kế hoạch mở rộng bay (Số: 35/CV-TTPD/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_G1_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "TTPD Miền Bắc - Agribank"
+        },
+        {
+          "code": "G.2",
+          "name": "Công văn giải trình bổ sung của Vietjet gửi Agribank Chi nhánh Sở Giao dịch (Số: 55/CV-VJC.TC/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_G2_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Công ty Cổ phần Hàng không Vietjet"
+        }
+      ]
+    },
+    {
+      "code": "H",
+      "name": "Bộ hồ sơ trong giai đoạn giải ngân",
+      "documents": [
+        {
+          "code": "H.1",
+          "name": "Giấy đề nghị rút vốn kiêm khế ước nhận nợ Đợt 1 - 500 tỷ VNĐ thanh toán tiền nhiên liệu Jet A1",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_H1_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Ban Tài chính Kế toán Vietjet Air"
+        },
+        {
+          "code": "H.2",
+          "name": "Báo cáo kiểm soát điều kiện giải ngân Đợt 1 và hóa đơn VAT Skypec (Số: 78/BC-KSGN/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_H2_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Phòng KHDN Lớn - Agribank CN Sở Giao dịch"
+        },
+        {
+          "code": "H.3",
+          "name": "Lệnh chuyển tiền thanh toán cho nhà cung cấp nhiên liệu hàng không Skypec (Số: 1505/UNC-2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_H3_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Phòng Kế toán & Thanh toán - Agribank SGD"
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "name": "Bộ hồ sơ trong giai đoạn thu nợ, quản lý nợ",
+      "documents": [
+        {
+          "code": "I.1",
+          "name": "Biên bản kiểm tra sử dụng vốn vay sau giải ngân 30 ngày (Số: 34/BB-KTSV/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_I1_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Tổ Kiểm tra sau vay - Agribank CN Sở Giao dịch"
+        },
+        {
+          "code": "I.3",
+          "name": "Báo cáo giám sát định kỳ chất lượng tín dụng và doanh thu phụ trợ Quý 3/2026 (Số: 89/BC-GS-Q3/2026)",
+          "fileCount": 1,
+          "fileName": "140000123DN0102325399_I3_01.pdf",
+          "size": "43 KB (1 trang scan)",
+          "isRealData": true,
+          "isOfficialPublicDoc": false,
+          "source": "Phòng QLRR - Agribank CN Sở Giao dịch"
+        }
+      ]
+    }
+  ]
+};
