@@ -13,11 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (paramProfile && profiles[paramProfile.toLowerCase()]) {
     currentProfileKey = paramProfile.toLowerCase();
-  } else if (localStorage.getItem("active_credit_profile") && profiles[localStorage.getItem("active_credit_profile")]) {
+  } else if (
+    localStorage.getItem("active_credit_profile") &&
+    profiles[localStorage.getItem("active_credit_profile")]
+  ) {
     currentProfileKey = localStorage.getItem("active_credit_profile");
   }
 
-  let data = profiles[currentProfileKey] || profiles.vietjet || profiles.vinamilk;
+  let data =
+    profiles[currentProfileKey] || profiles.vietjet || profiles.vinamilk;
 
   // Tiện ích format tiền VNĐ
   function formatMoney(num) {
@@ -102,11 +106,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isVjc) {
         btnExportMoody.href = "data/BA_AGRI_Moody_AI.xlsx";
         btnExportMoody.download = "Bang_Doi_Soat_Ho_So_Moody_AI_Vietjet.xlsx";
-        labelExportMoody.innerText = "Xuất kết quả rà soát Moody's (Vietjet XLSX)";
+        labelExportMoody.innerText =
+          "Xuất kết quả rà soát Moody's (Vietjet XLSX)";
       } else {
         btnExportMoody.href = "data/Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx";
         btnExportMoody.download = "Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx";
-        labelExportMoody.innerText = "Xuất kết quả rà soát Moody's (Vinamilk XLSX)";
+        labelExportMoody.innerText =
+          "Xuất kết quả rà soát Moody's (Vinamilk XLSX)";
       }
     }
 
@@ -281,29 +287,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const col1Header = isVjc ? "Năm 2024 (B.1 PwC)" : "Năm 2022 (B.1 VAS)";
     const col2Header = isVjc ? "Năm 2025 (B.2 PwC)" : "Năm 2023 (B.3 / F.1)";
-    const col3Header = isVjc ? "KH 2026 (NQ ĐHĐCĐ C.I.1.2)" : "TH 2025 / KH 2026 (C.I.1.2)";
+    const col3Header = isVjc
+      ? "KH 2026 (NQ ĐHĐCĐ C.I.1.2)"
+      : "TH 2025 / KH 2026 (C.I.1.2)";
 
     // Dữ liệu dòng tương ứng
-    const revCol1 = isVjc && f.year2024 ? f.year2024.netRevenue : y22.netRevenue;
-    const revCol2 = isVjc && f.year2025 ? f.year2025.netRevenue : y23.netRevenue;
+    const revCol1 =
+      isVjc && f.year2024 ? f.year2024.netRevenue : y22.netRevenue;
+    const revCol2 =
+      isVjc && f.year2025 ? f.year2025.netRevenue : y23.netRevenue;
 
-    const pbtCol1 = isVjc && f.year2024 ? f.year2024.profitBeforeTax : y22.profitBeforeTax;
-    const pbtCol2 = isVjc && f.year2025 ? f.year2025.profitBeforeTax : y23.profitBeforeTax;
+    const pbtCol1 =
+      isVjc && f.year2024 ? f.year2024.profitBeforeTax : y22.profitBeforeTax;
+    const pbtCol2 =
+      isVjc && f.year2025 ? f.year2025.profitBeforeTax : y23.profitBeforeTax;
 
-    const patCol1 = isVjc && f.year2024 ? f.year2024.profitAfterTax : y22.profitAfterTax;
-    const patCol2 = isVjc && f.year2025 ? f.year2025.profitAfterTax : y23.profitAfterTax;
+    const patCol1 =
+      isVjc && f.year2024 ? f.year2024.profitAfterTax : y22.profitAfterTax;
+    const patCol2 =
+      isVjc && f.year2025 ? f.year2025.profitAfterTax : y23.profitAfterTax;
 
-    const taCol1 = isVjc && f.year2024 ? f.year2024.totalAssets : y22.totalAssets;
-    const taCol2 = isVjc && f.year2025 ? f.year2025.totalAssets : y23.totalAssets;
+    const taCol1 =
+      isVjc && f.year2024 ? f.year2024.totalAssets : y22.totalAssets;
+    const taCol2 =
+      isVjc && f.year2025 ? f.year2025.totalAssets : y23.totalAssets;
 
-    const cashCol1 = isVjc && f.year2024 ? f.year2024.cashAndCashEquivalents : (y22.cashAndCashEquivalents + (y22.shortTermInvestments || 0));
-    const cashCol2 = isVjc && f.year2025 ? f.year2025.cashAndCashEquivalents : (y23.cashAndCashEquivalents + (y23.shortTermInvestments || 0));
+    const cashCol1 =
+      isVjc && f.year2024
+        ? f.year2024.cashAndCashEquivalents
+        : y22.cashAndCashEquivalents + (y22.shortTermInvestments || 0);
+    const cashCol2 =
+      isVjc && f.year2025
+        ? f.year2025.cashAndCashEquivalents
+        : y23.cashAndCashEquivalents + (y23.shortTermInvestments || 0);
 
     const eqCol1 = isVjc && f.year2024 ? f.year2024.equity : y22.equity;
     const eqCol2 = isVjc && f.year2025 ? f.year2025.equity : y23.equity;
 
-    const ocfCol1 = isVjc && f.year2024 ? f.year2024.operatingCashFlow : y22.operatingCashFlow;
-    const ocfCol2 = isVjc && f.year2025 ? f.year2025.operatingCashFlow : y23.operatingCashFlow;
+    const ocfCol1 =
+      isVjc && f.year2024
+        ? f.year2024.operatingCashFlow
+        : y22.operatingCashFlow;
+    const ocfCol2 =
+      isVjc && f.year2025
+        ? f.year2025.operatingCashFlow
+        : y23.operatingCashFlow;
 
     const planSummary = agm.plan2026
       ? `KH26: DT ${formatShortBillion(agm.plan2026.totalConsolidatedRevenue)}<br>LNTT: ${formatShortBillion(agm.plan2026.profitBeforeTax)}`
@@ -977,7 +1005,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (exportBtn) {
     exportBtn.addEventListener("click", function () {
       const isVjc = isVietjet();
-      const fileName = isVjc ? "vietjet_profile_data.json" : "vinamilk_profile_data.json";
+      const fileName = isVjc
+        ? "vietjet_profile_data.json"
+        : "vinamilk_profile_data.json";
       const dataStr =
         "data:text/json;charset=utf-8," +
         encodeURIComponent(JSON.stringify(data, null, 2));
@@ -1002,7 +1032,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const publicDocsBtn = document.getElementById("btnGoToPublicDocs");
   if (publicDocsBtn) {
     publicDocsBtn.addEventListener("click", function () {
-      const docTabBtn = document.querySelector('.tab-btn[data-tab="tab-documents"]');
+      const docTabBtn = document.querySelector(
+        '.tab-btn[data-tab="tab-documents"]',
+      );
       if (docTabBtn) docTabBtn.click();
       const storageBox = document.getElementById("public-docs-storage");
       if (storageBox) {
@@ -1015,28 +1047,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnSave = document.getElementById("btnSaveProfile");
   if (btnSave) {
     btnSave.addEventListener("click", function () {
-      alert(`Đã lưu dữ liệu hồ sơ tín dụng ${data.businessEntity.shortName} vào hệ thống LOS!`);
+      showToast(
+        `Đã lưu dữ liệu hồ sơ tín dụng ${data.businessEntity.shortName} vào hệ thống LOS!`,
+        "success",
+      );
     });
   }
 
   const btnForward = document.getElementById("btnForwardUpper");
   if (btnForward) {
     btnForward.addEventListener("click", function () {
-      alert(`Hồ sơ ${data.profileSummary.code} đang ở trạng thái: ${data.profileSummary.stateText}`);
+      alert(
+        `Hồ sơ ${data.profileSummary.code} đang ở trạng thái: ${data.profileSummary.stateText}`,
+      );
     });
   }
 
   const btnApprove = document.getElementById("btnApproveAction");
   if (btnApprove) {
     btnApprove.addEventListener("click", function () {
-      alert(`Hồ sơ đã được phê duyệt chính thức với Hạn mức ${formatShortBillion(data.loanProposal.approvedAmount)} theo ${data.profileSummary.approvalResult}`);
+      alert(
+        `Hồ sơ đã được phê duyệt chính thức với Hạn mức ${formatShortBillion(data.loanProposal.approvedAmount)} theo ${data.profileSummary.approvalResult}`,
+      );
     });
   }
 
   const btnSummon = document.getElementById("btnSummonBoard");
   if (btnSummon) {
     btnSummon.addEventListener("click", function () {
-      alert(`Triệu tập Hội đồng Tín dụng: ${data.profileSummary.approvalCenterName}`);
+      alert(
+        `Triệu tập Hội đồng Tín dụng: ${data.profileSummary.approvalCenterName}`,
+      );
     });
   }
 
@@ -1066,6 +1107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateHeaderAndToolbar();
     renderAllTabs();
+    showToast(`Đã chuyển sang hồ sơ ${data.businessEntity.shortName}`, "info");
   }
 
   // Listener khi đổi profile từ Select Dropdown
@@ -1073,6 +1115,279 @@ document.addEventListener("DOMContentLoaded", function () {
   if (selector) {
     selector.addEventListener("change", function () {
       switchProfile(this.value);
+    });
+  }
+
+  // ==========================================================================
+  // 19. Toast Notification System
+  // ==========================================================================
+  function showToast(message, type = "success") {
+    const container = document.getElementById("toastContainer");
+    if (!container) return;
+
+    const toast = document.createElement("div");
+    toast.className = `toast toast-${type}`;
+    const iconClass =
+      type === "success"
+        ? "fa-check-circle"
+        : type === "warning"
+          ? "fa-exclamation-triangle"
+          : "fa-info-circle";
+    toast.innerHTML = `<i class="fas ${iconClass}"></i><span>${message}</span>`;
+    container.appendChild(toast);
+
+    setTimeout(() => {
+      toast.style.opacity = "0";
+      toast.style.transform = "translateY(10px)";
+      toast.style.transition = "all 0.25s ease";
+      setTimeout(() => toast.remove(), 250);
+    }, 3200);
+  }
+
+  // ==========================================================================
+  // 20. Command Palette (Spotlight Quick Search)
+  // ==========================================================================
+  const cmdBackdrop = document.getElementById("cmdPaletteBackdrop");
+  const cmdInput = document.getElementById("cmdInput");
+  const cmdResults = document.getElementById("cmdResults");
+  const btnOpenSearch = document.getElementById("btnOpenSearch");
+
+  function openCommandPalette() {
+    if (!cmdBackdrop) return;
+    cmdBackdrop.classList.add("show");
+    if (cmdInput) {
+      cmdInput.value = "";
+      cmdInput.focus();
+    }
+    renderCommandList("");
+  }
+
+  function closeCommandPalette() {
+    if (!cmdBackdrop) return;
+    cmdBackdrop.classList.remove("show");
+  }
+
+  if (btnOpenSearch) {
+    btnOpenSearch.addEventListener("click", openCommandPalette);
+  }
+
+  if (cmdBackdrop) {
+    cmdBackdrop.addEventListener("click", function (e) {
+      if (e.target === cmdBackdrop) closeCommandPalette();
+    });
+  }
+
+  window.addEventListener("keydown", function (e) {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      if (cmdBackdrop && cmdBackdrop.classList.contains("show")) {
+        closeCommandPalette();
+      } else {
+        openCommandPalette();
+      }
+    } else if (
+      e.key === "Escape" &&
+      cmdBackdrop &&
+      cmdBackdrop.classList.contains("show")
+    ) {
+      closeCommandPalette();
+    }
+  });
+
+  const commandsData = [
+    {
+      category: "Khách hàng Doanh nghiệp",
+      title: "Chuyển sang: CTCP Hàng không Vietjet (VJC)",
+      icon: "fa-building",
+      badge: "Hồ sơ",
+      action: () => switchProfile("vietjet"),
+    },
+    {
+      category: "Khách hàng Doanh nghiệp",
+      title: "Chuyển sang: CTCP Sữa Việt Nam (Vinamilk - VNM)",
+      icon: "fa-building",
+      badge: "Hồ sơ",
+      action: () => switchProfile("vinamilk"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 1: Thông tin pháp lý doanh nghiệp",
+      icon: "fa-balance-scale",
+      badge: "Tab 1",
+      action: () => activateTab("tab-business-entity"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 2: Thông tin kinh tế & BCTC (3 năm)",
+      icon: "fa-chart-line",
+      badge: "Tab 2",
+      action: () => activateTab("tab-credit-report"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 3: Phương án sử dụng vốn vay",
+      icon: "fa-bullseye",
+      badge: "Tab 3",
+      action: () => activateTab("tab-loan-purpose"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 4: Danh mục Tài sản bảo đảm (TSBĐ)",
+      icon: "fa-warehouse",
+      badge: "Tab 4",
+      action: () => activateTab("tab-collateral"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 5: Đề xuất hạn mức & Lãi suất",
+      icon: "fa-hand-holding-usd",
+      badge: "Tab 5",
+      action: () => activateTab("tab-proposal"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 6: Thông tin chung & bổ sung (CIC)",
+      icon: "fa-info-circle",
+      badge: "Tab 6",
+      action: () => activateTab("tab-additional"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 7: Quyết định Phê duyệt & Điều kiện",
+      icon: "fa-clipboard-check",
+      badge: "Tab 7",
+      action: () => activateTab("tab-approvement"),
+    },
+    {
+      category: "Điều hướng Tab",
+      title: "Tab 8: Danh mục 35 hồ sơ scan đính kèm (A - I)",
+      icon: "fa-folder-open",
+      badge: "Tab 8",
+      action: () => activateTab("tab-documents"),
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "Lưu hồ sơ tín dụng",
+      icon: "fa-save",
+      badge: "Lưu",
+      action: () => showToast("Đã lưu hồ sơ thành công!", "success"),
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "In tờ trình thẩm định tín dụng",
+      icon: "fa-print",
+      badge: "In",
+      action: () => window.print(),
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "Xuất bảng đối soát Moody's AI (Excel XLSX)",
+      icon: "fa-file-excel",
+      badge: "Tải",
+      action: () => {
+        const btn = document.getElementById("btnExportMoody");
+        if (btn) btn.click();
+      },
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "Mở kho 7 tài liệu công khai gốc HOSE & Kiểm toán",
+      icon: "fa-archive",
+      badge: "Mở",
+      action: () => {
+        const btn = document.getElementById("btnGoToPublicDocs");
+        if (btn) btn.click();
+      },
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "Xuất toàn bộ dữ liệu hồ sơ (JSON)",
+      icon: "fa-download",
+      badge: "Xuất",
+      action: () => {
+        const btn = document.getElementById("btnExportJson");
+        if (btn) btn.click();
+      },
+    },
+    {
+      category: "Thao tác Nhanh",
+      title: "Sao chép Mã số hồ sơ tín dụng",
+      icon: "fa-copy",
+      badge: "Copy",
+      action: () => {
+        navigator.clipboard.writeText(data.profileSummary.code);
+        showToast(`Đã sao chép: ${data.profileSummary.code}`, "info");
+      },
+    },
+  ];
+
+  function activateTab(tabId) {
+    const btn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+    if (btn) btn.click();
+    closeCommandPalette();
+  }
+
+  function renderCommandList(query) {
+    if (!cmdResults) return;
+    const q = (query || "").toLowerCase().trim();
+    const filtered = commandsData.filter(
+      (c) =>
+        c.title.toLowerCase().includes(q) ||
+        c.category.toLowerCase().includes(q),
+    );
+
+    if (filtered.length === 0) {
+      cmdResults.innerHTML = `
+        <div style="padding: 20px; text-align: center; color: var(--text-muted); font-size: 13px;">
+          Không tìm thấy thao tác phù hợp với "${query}".
+        </div>
+      `;
+      return;
+    }
+
+    const grouped = {};
+    filtered.forEach((item) => {
+      if (!grouped[item.category]) grouped[item.category] = [];
+      grouped[item.category].push(item);
+    });
+
+    let html = "";
+    Object.keys(grouped).forEach((cat) => {
+      html += `<div class="cmd-group-label">${cat}</div>`;
+      grouped[cat].forEach((item) => {
+        html += `
+          <div class="cmd-item" data-title="${item.title}">
+            <i class="fas ${item.icon}"></i>
+            <span>${item.title}</span>
+            <span class="cmd-badge">${item.badge}</span>
+          </div>
+        `;
+      });
+    });
+
+    cmdResults.innerHTML = html;
+
+    cmdResults.querySelectorAll(".cmd-item").forEach((el) => {
+      el.addEventListener("click", function () {
+        const title = this.getAttribute("data-title");
+        const found = commandsData.find((c) => c.title === title);
+        if (found) {
+          found.action();
+          closeCommandPalette();
+        }
+      });
+    });
+  }
+
+  if (cmdInput) {
+    cmdInput.addEventListener("input", function () {
+      renderCommandList(this.value);
+    });
+    cmdInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const first = cmdResults.querySelector(".cmd-item");
+        if (first) first.click();
+      }
     });
   }
 

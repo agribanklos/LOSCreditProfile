@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="pageTitle">Chi tiết Hồ sơ Tín dụng Pháp nhân - Agribank LOS</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239b1b30'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-weight='bold' font-size='32'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238b152b'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-weight='bold' font-size='32'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +20,7 @@
       <span style="font-size: 12px; color: rgba(255,255,255,0.9); font-weight: 600;">
         <i class="fas fa-building"></i> Chọn Hồ sơ:
       </span>
-      <select id="profileSelector" style="background: #ffffff; color: #9b1b30; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; padding: 5px 12px; font-size: 13px; cursor: pointer; outline: none; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+      <select id="profileSelector" style="background: #ffffff; color: #8b152b; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; padding: 5px 12px; font-size: 13px; cursor: pointer; outline: none; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
         <option value="vietjet" selected>CTCP Hàng không Vietjet (Vietjet Air - VJC)</option>
         <option value="vinamilk">CTCP Sữa Việt Nam (Vinamilk - VNM)</option>
       </select>
@@ -45,16 +45,9 @@
       <button class="btn btn-primary" id="btnSaveProfile">
         <i class="fas fa-save"></i> Lưu hồ sơ
       </button>
-      <!-- <button class="btn btn-outline-primary" onclick="alert('Hồ sơ đang ở trạng thái Đã phê duyệt.');">
-      <button class="btn btn-outline-primary" id="btnForwardUpper">
-        <i class="fas fa-share-square"></i> Chuyển cấp trên
+      <button class="btn btn-outline-secondary" id="btnOpenSearch" title="Phím tắt ⌘K hoặc Ctrl+K">
+        <i class="fas fa-search"></i> Tìm nhanh (⌘K)
       </button>
-      <button class="btn btn-success" id="btnApproveAction">
-        <i class="fas fa-check-double"></i> Phê duyệt
-      </button>
-      <button class="btn btn-outline-secondary" id="btnSummonBoard">
-        <i class="fas fa-gavel"></i> Triệu tập HĐTD
-      </button> -->
       <button class="btn btn-info" id="btnPrintProfile">
         <i class="fas fa-print"></i> In tờ trình
       </button>
@@ -156,6 +149,23 @@
       </div>
     </div>
   </div>
+
+  <!-- Command Palette Modal (Spotlight Quick Search) -->
+  <div class="cmd-palette-backdrop" id="cmdPaletteBackdrop">
+    <div class="cmd-palette">
+      <div class="cmd-input-wrapper">
+        <i class="fas fa-search"></i>
+        <input type="text" id="cmdInput" class="cmd-input" placeholder="Tìm nhanh tab, chỉ số tài chính, hồ sơ scan, hành động... (ESC để đóng)" autocomplete="off">
+        <span class="cmd-esc-tag">ESC</span>
+      </div>
+      <div class="cmd-results" id="cmdResults">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
 
   <!-- Scripts -->
   <script src="js/data.js"></script>
