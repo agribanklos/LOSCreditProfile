@@ -1,8 +1,6 @@
 {
   "name": "LOSCreditProfile",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "description": "Hệ thống Phê duyệt & Thẩm định Tín dụng Tập trung (LOS Credit Profile)",
   "main": "index.html",
   "scripts": {

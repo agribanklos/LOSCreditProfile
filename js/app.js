@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     vietjet: window.VIETJET_PROFILE_DATA || null,
   };
 
-  // Xác định profile mặc định từ URL query param (?profile=vietjet) hoặc localStorage hoặc mặc định vinamilk
+  // Xác định profile mặc định từ URL query param (?profile=vietjet) hoặc localStorage hoặc mặc định vietjet
   const urlParams = new URLSearchParams(window.location.search);
   const paramProfile = urlParams.get("profile");
-  let currentProfileKey = "vinamilk";
+  let currentProfileKey = "vietjet";
 
   if (paramProfile && profiles[paramProfile.toLowerCase()]) {
     currentProfileKey = paramProfile.toLowerCase();
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentProfileKey = localStorage.getItem("active_credit_profile");
   }
 
-  let data = profiles[currentProfileKey] || profiles.vinamilk;
+  let data = profiles[currentProfileKey] || profiles.vietjet || profiles.vinamilk;
 
   // Tiện ích format tiền VNĐ
   function formatMoney(num) {
