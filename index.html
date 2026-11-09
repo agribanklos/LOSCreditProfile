@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi tiết Hồ sơ Tín dụng Pháp nhân (CTCP Sữa Việt Nam - Vinamilk)</title>
+  <title id="pageTitle">Chi tiết Hồ sơ Tín dụng Pháp nhân - Agribank LOS</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239b1b30'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-weight='bold' font-size='32'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,6 +16,15 @@
       <div class="brand-badge">AGRIBANK</div>
       <div class="brand-title">HỆ THỐNG PHÊ DUYỆT & THẨM ĐỊNH TÍN DỤNG TẬP TRUNG</div>
     </div>
+    <div class="profile-switcher" style="display: flex; align-items: center; gap: 8px;">
+      <span style="font-size: 12px; color: rgba(255,255,255,0.9); font-weight: 600;">
+        <i class="fas fa-building"></i> Chọn Hồ sơ:
+      </span>
+      <select id="profileSelector" style="background: #ffffff; color: #9b1b30; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; padding: 5px 12px; font-size: 13px; cursor: pointer; outline: none; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <option value="vinamilk">CTCP Sữa Việt Nam (Vinamilk - VNM)</option>
+        <option value="vietjet">CTCP Hàng không Vietjet (Vietjet Air - VJC)</option>
+      </select>
+    </div>
   </header>
 
   <!-- Main Container -->
@@ -27,44 +36,43 @@
         <li><a href="javascript:void(0)"><i class="fas fa-users"></i> Khách hàng</a></li>
         <li><a href="javascript:void(0)">Hồ sơ tín dụng</a></li>
         <li><a href="javascript:void(0)">Pháp nhân</a></li>
-        <li class="active">Chi tiết: CÔNG TY CỔ PHẦN SỮA VIỆT NAM (Mã HS: 7900.001.23.DN.0300588569)</li>
+        <li class="active" id="breadcrumbActiveItem">Chi tiết: CÔNG TY CỔ PHẦN SỮA VIỆT NAM (Mã HS: 7900.001.23.DN.0300588569)</li>
       </ul>
     </div>
 
     <!-- Action Toolbar Buttons -->
     <div class="toolbar-actions">
-      <button class="btn btn-primary" onclick="alert('Đã lưu dữ liệu hồ sơ vào hệ thống!');">
+      <button class="btn btn-primary" id="btnSaveProfile">
         <i class="fas fa-save"></i> Lưu hồ sơ
       </button>
-      <button class="btn btn-outline-primary" onclick="alert('Hồ sơ đang ở trạng thái Đã phê duyệt.');">
+      <button class="btn btn-outline-primary" id="btnForwardUpper">
         <i class="fas fa-share-square"></i> Chuyển cấp trên
       </button>
-      <button class="btn btn-success" onclick="alert('Hồ sơ đã được phê duyệt chính thức với Hạn mức 3.000 tỷ VNĐ theo Thông báo số 120/TB-TTPD.');">
+      <button class="btn btn-success" id="btnApproveAction">
         <i class="fas fa-check-double"></i> Phê duyệt
       </button>
-      <button class="btn btn-outline-secondary" onclick="alert('Triệu tập Hội đồng Tín dụng TTPD.');">
+      <button class="btn btn-outline-secondary" id="btnSummonBoard">
         <i class="fas fa-gavel"></i> Triệu tập HĐTD
       </button>
       <button class="btn btn-info" id="btnPrintProfile">
         <i class="fas fa-print"></i> In tờ trình
       </button>
-      <a href="data/Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" download="Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" class="btn btn-warning" style="text-decoration: none;">
-        <i class="fas fa-file-excel"></i> Xuất kết quả rà soát Moody's (XLSX)
+      <a href="data/Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" id="btnExportMoody" download="Bang_Doi_Soat_Ho_So_Moody_AI_Vinamilk.xlsx" class="btn btn-warning" style="text-decoration: none;">
+        <i class="fas fa-file-excel"></i> <span id="labelExportMoody">Xuất kết quả rà soát Moody's (XLSX)</span>
       </a>
       <button class="btn btn-outline-success" id="btnGoToPublicDocs">
-        <i class="fas fa-archive"></i> Kho hồ sơ công khai (7 tài liệu gốc HOSE, KPMG & ĐHĐCĐ 2026)
+        <i class="fas fa-archive"></i> <span id="labelPublicDocs">Kho hồ sơ công khai (7 tài liệu gốc)</span>
       </button>
       <button class="btn btn-outline-primary btn-right" id="btnExportJson">
-        <i class="fas fa-download"></i> Xuất dữ liệu JSON (vinamilk_profile_data.json)
+        <i class="fas fa-download"></i> <span id="labelExportJson">Xuất dữ liệu JSON</span>
       </button>
     </div>
 
     <!-- Alert Box -->
-    <div class="alert-box alert-success">
+    <div class="alert-box alert-success" id="profileAlertBox">
       <i class="fas fa-shield-alt" style="font-size: 16px; margin-top: 1px;"></i>
-      <div>
-        <strong>Hồ sơ Tín dụng Vượt thẩm quyền đã được chuẩn hóa 100% theo đúng nội dung các tệp PDF đính kèm:</strong>
-        Toàn bộ tiêu đề, năm, số hiệu văn bản, số trang, dung lượng và chỉ tiêu tài chính trên giao diện Web khớp chính xác tuyệt đối với <strong>7 văn bản công bố thông tin gốc</strong> (BCTC kiểm toán KPMG VAS số 22-01-00293-22-6 & IFRS, BCTN 2022, Báo cáo quản trị 2022-2023, CBTT BCTC kiểm toán 2023 số 263/CV-CTS.TC/2024, Nghị quyết & Biên bản ĐHĐCĐ thường niên 2026 số 01/NQ-CTS.ĐHĐCĐ/2026 ngày 22/04/2026) và <strong>35 tệp PDF hồ sơ tín dụng (Nhóm A đến Nhóm I)</strong>.
+      <div id="profileAlertContent">
+        <!-- Được cập nhật động theo hồ sơ qua JS -->
       </div>
     </div>
 
@@ -150,6 +158,7 @@
 
   <!-- Scripts -->
   <script src="js/data.js"></script>
+  <script src="js/vietjet_data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
